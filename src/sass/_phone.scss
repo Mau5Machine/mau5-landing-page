@@ -1,3 +1,29 @@
 body {
     background: blue;
 }
+li {
+    list-style-type: none;
+}
+a,
+a:active,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: 100%;
+    min-height: 120px;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+.nav-links li {
+    font-size: 1.2em;
+    float: left;
+    margin-top: 100px;
+    padding: 0 25px;
+}
