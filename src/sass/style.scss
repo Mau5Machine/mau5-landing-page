@@ -1,0 +1,12 @@
+@import "var";
+
+@import "phone";
+
+@media only screen and (min-width: 560px) {
+@import "tab";
+} /* end media query */
+    
+    
+@media only screen and (min-width: 1140px) {
+@import "desktop";
+} /* end media query */
