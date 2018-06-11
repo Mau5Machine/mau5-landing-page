@@ -1,9 +1,13 @@
+/*===============GLOBAL RULES ========================*/
+
 body {
-    background: blue;
+    background: $bgColor;
 }
+
 li {
     list-style-type: none;
 }
+
 a,
 a:active,
 a:hover,
@@ -12,18 +16,34 @@ a:visited {
     text-decoration: none;
     color: black;
 }
+
+/*=================NAVBAR STYLES========================*/
+
 nav {
     display: flex;
     flex-direction: row;
     background: white;
     width: 100%;
     min-height: 120px;
+    max-height: 15 0px;
     flex-flow: row;
     justify-content: flex-start;
 }
+
 .nav-links li {
     font-size: 1.2em;
     float: left;
     margin-top: 100px;
     padding: 0 25px;
+    border-right: 1px solid black;
 }
+
+.nav-links {
+    flex: 2;
+}
+
+.mau5-nav {
+    flex-basis: 5%;
+}
+
+/*====================HEADER H1 STYLES HERE========================*/

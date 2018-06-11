@@ -1,0 +1,89 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: 100%;
+    min-height: 120px;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+.nav-links li {
+    font-size: 1.8em;
+    float: left;
+    margin-top: 100px;
+    padding: 0 25px;
+    border-right: 1px solid black;
+    font-family: $mainFont;
+    font-weight: $boldWeight;
+}
+
+.nav-links {
+    flex: 2;
+}
+
+.mau5-nav {
+    flex-basis: 15%;
+}
+
+/*====================HEADER H1 STYLES HERE========================*/
+
+.main-banner {
+    margin-top: 100px;
+    text-align: center;
+    font-family: $pixelFont;
+    text-shadow: 10px 10px 10px black;
+    font-size: 2.5em;
+    color: $offWhite;
+    p {
+        margin: 20px 0;
+        font-size: .5em;
+        color: $mainGreen;
+        font-weight: $boldWeight;
+    }
+}
+
+/*===================THREE PART CONTAINER MAIN STYLE HERE =====================*/
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/*======================LEFT SIDEBAR=========================*/
+
+.sidebar {
+    margin-left: 10px;
+    flex-basis: 25%;
+    min-height: 500px;
+    li {
+        font-family: $futureFont;
+        color: $offWhite;
+        padding: 20px 0;
+        text-shadow: 10px 10px 10px black;
+        font-size: 1.2em;
+    }
+    img {
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+}
+
+/*======================MIDDLE MAIN CONTAINER=================*/
+
+.main {
+    flex-basis: 50%;
+    min-height: 200px;
+    background: url(http://afkdeveloper.com/images/mau5-site/space-mau5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*======================RIGTH SIDEBAR=========================*/
+
+.sidebar2 {
+    flex-basis: 20%;
+    background: gray;
+    min-height: 200px;
+}
