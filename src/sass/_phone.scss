@@ -1,7 +1,17 @@
 /*===============GLOBAL RULES ========================*/
 
-body {
-    background: $bgColor;
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html body {
+    background: rgb(0, 0, 0);
 }
 
 li {
@@ -14,36 +24,228 @@ a:hover,
 a:focus,
 a:visited {
     text-decoration: none;
-    color: black;
 }
 
 /*=================NAVBAR STYLES========================*/
 
-nav {
-    display: flex;
-    flex-direction: row;
-    background: white;
-    width: 100%;
-    min-height: 120px;
-    max-height: 15 0px;
-    flex-flow: row;
-    justify-content: flex-start;
+.navbar-brand img {
+    width: 60px;
 }
 
-.nav-links li {
-    font-size: 1.2em;
-    float: left;
-    margin-top: 100px;
-    padding: 0 25px;
-    border-right: 1px solid black;
+.navbar-header {
+    height: 75px;
+    background: $offWhite;
+    box-shadow: 0 5px 20px $mainGreen;
 }
 
-.nav-links {
-    flex: 2;
-}
-
-.mau5-nav {
-    flex-basis: 5%;
+.navbar-nav {
+    font-size: 1.5em;
+    li {
+        padding: 5px;
+        font-family: $futureFont;
+        text-shadow: 3px 3px 3px black;
+    }
 }
 
 /*====================HEADER H1 STYLES HERE========================*/
+
+.main-banner {
+    margin-top: 180px;
+    text-align: center;
+    font-family: $pixelFont;
+    text-shadow: 3px 3px 10px hsl(0, 0%, 48%);
+    font-size: 1.8em;
+    line-height: 1.4em;
+    color: $offWhite;
+    p {
+        margin: 20px 0;
+        font-size: .7em;
+        color: $mainGreen;
+        font-weight: $boldWeight;
+    }
+}
+
+/*===================THREE PART CONTAINER MAIN STYLE HERE =====================*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+/*======================LEFT SIDEBAR=========================*/
+
+.sidebar {
+    background: url(http://afkdeveloper.com/images/mau5-site/mau5-design.png);
+    background-repeat: no-repeat;
+    margin-left: 2%;
+    flex-basis: 75%;
+    min-height: 536px;
+    order: 1;
+    li {
+        font-family: $futureFont;
+        color: $offWhite;
+        padding: 20px 0;
+        text-shadow: 10px 10px 10px black;
+        font-size: 1.4em;
+    }
+    img {
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+}
+
+/*======================MIDDLE MAIN CONTAINER=================*/
+
+.main {
+    flex-basis: 80%;
+    min-height: 200px;
+    order: 3;
+    border: 4px solid black;
+    margin-left: $gutter;
+}
+
+#video {
+    width: 400px;
+    margin: auto;
+    display: block;
+    margin-top: 60px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 20px green;
+    border-radius: 20px;
+}
+
+/*======================RIGTH SIDEBAR=========================*/
+
+.sidebar2 {
+    flex-basis: 100%;
+    margin-left: $gutter;
+    min-height: 736px;
+    order: 2;
+    background: url(http://afkdeveloper.com/images/mau5-site/mau5-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    h2 {
+        font-family: $futureFont;
+        line-height: 2.5em;
+        text-shadow: 4px 4px 10px black;
+        color: $mainGreen;
+        font-size: 2em;
+    }
+    form {
+        margin-top: 5em;
+        text-align: center;
+    }
+    #email {
+        width: 75%;
+        height: 40px;
+        font-family: $futureFont;
+        background: $offWhite;
+        border: 2px solid black;
+        box-shadow: 10px 10px 10px black;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    #submit {
+        padding: 0 30px;
+        font-size: 20px;
+        font-family: $futureFont;
+        margin-top: 10px;
+        border-radius: 40px;
+        background: $mainGreen;
+        box-shadow: 10px 10px 10px black;
+    }
+}
+
+/*==============MERCH SECTION GOES HERE, TSHIRTS AND POSTERS============*/
+
+.merch {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+/*================TSHIRTS STYLES HERE=================*/
+
+.tshirts {
+    flex-basis: 100%;
+    order: 2;
+    margin-left: $gutter;
+    margin-right: $gutter;
+    min-height: 736px;
+    color: $offWhite;
+    font-family: $futureFont;
+    text-align: center;
+    text-shadow: 3px 3px 10px hsl(0, 0%, 48%);
+    line-height: 1.6em;
+}
+
+li {
+    font-size: 1.2em;
+}
+
+i {
+    color: $mainGreen;
+    margin-right: 10px;
+}
+
+a {
+    line-height: 2em;
+    color: $mainGreen;
+}
+
+.or,
+.then,
+.collection {
+    color: $mainGreen;
+    padding: 20px 0;
+}
+
+/*================POSTERS STYLES HERE=================*/
+
+.posters {
+    flex-basis: 100%;
+    min-height: 1000px;
+    order: 1;
+    margin: 0 $gutter;
+    text-align: center;
+    color: $offWhite;
+    font-family: $futureFont;
+    text-align: center;
+    text-shadow: 3px 3px 10px hsl(0, 0%, 48%);
+    line-height: 1.6em;
+    font-size: 1.2em;
+    ul {
+        margin-top: 20px;
+    }
+    li {
+        line-height: 2em;
+    }
+    a {
+        line-height: 2em;
+        color: $mainGreen;
+    }
+    border-bottom: 2px solid $mainGreen;
+}
+
+/*==================FOOTER===============*/
+
+.footer {
+    background-color: $offWhite;
+    min-height: 120px;
+    margin-top: 60px;
+    text-align: center;
+    opacity: .8;
+    font-family: $mainFont;
+    margin: 0;
+}
+
+.contact-info {
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    a {
+        color: black;
+        text-shadow: 1px 1px 1px black;
+        font-size: 1.2em;
+    }
+}

@@ -7,67 +7,157 @@
     <!-- Inject CSS -->
     <link rel="stylesheet" href="css/mau5.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P" rel="stylesheet">
+    <!-- Added Bootstrap v3.3.1 for collapsible navbar in Query -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Adding font awesome for small icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <title>Deadmau5 Things &amp; Stuff</title>
 </head>
 
 <body>
+    <!-- HEADER AND NAV GOES HERE -->
     <div class="wrapper">
         <header>
-            <nav id="nav-bar">
-                <div class="mau5-nav">
-                    <a href="http://deadmau5.com" alt="Deadmau5 Website" target="blank">
-                        <img src="http://afkdeveloper.com/images/mau5-site/mau5-nav.png" id="header-img" alt="link to deadmau5 website">
-                    </a>
-                </div>
-                <div class="nav-links">
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#" target="blank">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" target="blank">Things</a>
-                        </li>
-                        <li>
-                            <a href="#" target="blank">Stuff</a>
-                        </li>
-                        <li>
-                            <a href="#" target="blank">Contact</a>
-                        </li>
-                    </ul>
-            </nav>
+            <div class="mau5-nav">
+                <nav id="nav-bar" class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button style="background: black;" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img src="http://afkdeveloper.com/images/mau5-site/mau5-nav.png" id="header-img" alt="link to deadmau5 website">
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <li>
+                                        <a href="#tshirts">T-Shirts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#posters">Posters</a>
+                                    </li>
+                                    <li>
+                                        <a href="#mau5set">Epic Mau5 Set</a>
+                                    </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#signup">
+                                        <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <div class="main-banner">
+            <div class="main-banner" id="home">
                 <h1>Deadmau5 Things &amp; Stuff</h1>
                 <p>The one stop shop for all of your Deadmau5 merchandise!</p>
             </div>
-            <div class="main-container">
-                <div class="sidebar">
-                    <ul class="img-list">
-                        <li>
-                            <img src="http://afkdeveloper.com/images/mau5-site/mau5-icon.png"> Free 5hipping on orders over $20</li>
-                        <li>
-                            <img src="http://afkdeveloper.com/images/mau5-site/mau5-icon.png"> Ma55ive T-shirt design gallery</li>
-                        <li>
-                            <img src="http://afkdeveloper.com/images/mau5-site/mau5-icon.png"> Customize Anything</li>
-                        <li>
-                            <img src="http://afkdeveloper.com/images/mau5-site/mau5-icon.png"> Fast shipping all over the world</li>
-                    </ul>
-                </div>
-                <div class="main">
-                </div>
-                <div class="sidebar2">
-                    <h2>Don't miss out on weekly Special Offers! Join our Email List and recieve a $5 credit towards anything
-                        in our collection!</h2>
-                    <form action="email" id="id">
-                        <input type="email" id="email" placeholder="Enter Email Address" required="email">
+        </header>
+        <!-- BEGINNING OF MAIN CONTENT GOES HERE -->
+        <div class="main-container">
+            <!-- FIRST SIDEBAR HERE WITH INFO ON SITE -->
+            <div class="sidebar">
+                <ul class="img-list">
+                    <li>
+                        <img src="http://afkdeveloper.com/images/mau5-site/mau5-icon.png"> Free 5hipping on orders over $20</li>
+                    <li>
+                        <img src="http://afkdeveloper.com/images/mau5-site/mau5-icon.png"> Ma55ive T-shirt design gallery</li>
+                    <li>
+                        <img src="http://afkdeveloper.com/images/mau5-site/mau5-icon.png"> Customize Anything</li>
+                    <li>
+                        <img src="http://afkdeveloper.com/images/mau5-site/mau5-icon.png"> Fast shipping all over the world</li>
+                </ul>
+            </div>
+            <!-- THIS IS THE VIDEO EMBED MIDDLE COMPONENT ON LARGE SCREENS -->
+            <div class="main" id="mau5set">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vQC30mLdcqU?rel=0&amp;controls=0&amp;showinfo=0&amp;start=550"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video"></iframe>
+            </div>
+            <!-- SIGNUP SECTION GOES HERE -->
+            <div id="signup" class="sidebar2">
+                <h2>Don't miss out on weekly Special Offers! Join our Email List and recieve a $5 credit towards anything in
+                    our collection!</h2>
+                <form action="email" id="id">
+                    <input type="email" id="email" placeholder="Enter Email Address" required="email">
+                    <br>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+        <!-- BEGGINNING OF TSHIRT AND POSTER FLEX COLUMNS, ATTACH TO LINKS -->
+        <div class="merch">
+            <div id="tshirts" class="tshirts">
+                <h2>De5ign Your Own</h2>
+                <h3>Mau5 Shirt</h3>
+                <img src="http://afkdeveloper.com/images/mau5-site/mau5-shirt.png" alt="Space Mau5 Design Shirt">
+                <h3>How it works</h3>
+                <img src="http://afkdeveloper.com/images/mau5-site/pixel-heart.png">
+                <ul class="works">
+                    <li>
+                        <i class="far fa-hand-point-right fa-2x"></i>Send us the design of your choice</li>
+                    <li>
+                        <i class="far fa-hand-point-right fa-2x"></i>Let us know what size and color you would like</li>
+                    <li class="or">OR</li>
+                    <li>
+                        <i class="far fa-hand-point-right fa-2x"></i>Select a de5ign from our ma55ive
+                        <a href="#" class="collection" alt="Thirt gallery" style="font-size:1.6em;">mau5 collection</a>
+                    </li>
+                    <li class="then">Stuff...</li>
+                    <li>
+                        <i class="far fa-hand-point-right fa-2x"></i>Track it all the way to your doorstep!</li>
+                    <li>
+                        <i class="far fa-hand-point-right fa-2x"></i>We only use Premium reusable fabrics for all of our mau5 wear</li>
+                    <li>
+                        <i class="far fa-hand-point-right fa-2x"></i>Breathable, and long lasting colors</li>
+                </ul>
+                <!-- FOOTER GOES HERE, STAY DOWN! -->
+                <div class="footer">
+                    <div class="contact-info">
+                        <h2>Contact Us</h2>
+                        <i class="far fa-envelope fa-lg"></i>
+                        <a href="mailto:christian@afkdeveloper.com">Mau5things @ mau5stuff.org</a>
                         <br>
-                        <input type="submit" id="submit">
-                    </form>
+                        <i class="fas fa-phone-volume fa-lg"></i>
+                        <a href="tel:+5618523597">800-MAU-5YOU</a>
+                        <address>
+                            1600 Amphitheatre Pkwy, Mountain View, CA 94043
+                        </address>
+                    </div>
                 </div>
             </div>
-
-        </header>
-
+            <!-- POSTERS SECTION GOES HERE -->
+            <div id="posters" class="posters">
+                <h2>Epic Po5ter</h2>
+                <h3>Things...</h3>
+                <img src="http://afkdeveloper.com/images/mau5-site/mau5-poster.png" alt="Deadmau5 Poster">
+                <ul class="posters-list">
+                    <li>
+                        <i class="fas fa-asterisk fa-1x"></i>Limitless Designs</li>
+                    <li>
+                        <i class="fas fa-asterisk fa-1x"></i>Excellent long lasting quality</li>
+                    <li>
+                        <i class="fas fa-asterisk fa-1x"></i>Any size you can imagine</li>
+                    <li>
+                        <i class="fas fa-asterisk fa-1x"></i>Buy 5 get 1 FREE</li>
+                    <li>
+                        <a href="#" alt="poster gallery">Po5ter Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END OF WRAPPER HERE NO MORE CONTENT BELOW THIS LINE! -->
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/mau5.js"></script>
