@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Inject CSS -->
-    <link rel="stylesheet" href="css/mau5.css">
+    <link rel="stylesheet" href="mau5.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P" rel="stylesheet">
     <!-- Added Bootstrap v3.3.1 for collapsible navbar in Query -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
 <body>
     <!-- HEADER AND NAV GOES HERE -->
     <div class="wrapper">
-        <header>
+        <header id="header">
             <div class="mau5-nav">
                 <nav id="nav-bar" class="navbar navbar-inverse navbar-fixed-top">
                     <div class="container-fluid">
@@ -36,18 +36,18 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
-                                <li class="active">
-                                    <a href="#home">Home</a>
+                                <li>
+                                    <a class="nav-link" href="#home">Home</a>
                                 </li>
                                 <li class="dropdown">
                                     <li>
-                                        <a href="#tshirts">T-Shirts</a>
+                                        <a class="nav-link" href="#tshirts">T-Shirts</a>
                                     </li>
                                     <li>
-                                        <a href="#posters">Posters</a>
+                                        <a class="nav-link" href="#posters">Posters</a>
                                     </li>
                                     <li>
-                                        <a href="#mau5set">Epic Mau5 Set</a>
+                                        <a class="nav-link" href="#mau5set">Epic Mau5 Set</a>
                                     </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
@@ -60,11 +60,12 @@
                     </div>
                 </nav>
             </div>
-            <div class="main-banner" id="home">
-                <h1>Deadmau5 Things &amp; Stuff</h1>
-                <p>The one stop shop for all of your Deadmau5 merchandise!</p>
-            </div>
         </header>
+        <div class="main-banner" id="home">
+            <h1>Deadmau5 Things &amp; Stuff</h1>
+            <p>The one stop shop for all of your Deadmau5 merchandise!</p>
+        </div>
+
         <!-- BEGINNING OF MAIN CONTENT GOES HERE -->
         <div class="main-container">
             <!-- FIRST SIDEBAR HERE WITH INFO ON SITE -->
@@ -82,6 +83,7 @@
             </div>
             <!-- THIS IS THE VIDEO EMBED MIDDLE COMPONENT ON LARGE SCREENS -->
             <div class="main" id="mau5set">
+                <h2>Epic Mau5 Set</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vQC30mLdcqU?rel=0&amp;controls=0&amp;showinfo=0&amp;start=550"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video"></iframe>
             </div>
@@ -89,10 +91,10 @@
             <div id="signup" class="sidebar2">
                 <h2>Don't miss out on weekly Special Offers! Join our Email List and recieve a $5 credit towards anything in
                     our collection!</h2>
-                <form action="email" id="id">
-                    <input type="email" id="email" placeholder="Enter Email Address" required="email">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input name="email" type="email" id="email" placeholder="Enter Email Address" required="email">
                     <br>
-                    <input type="submit" id="submit">
+                    <input value="submit" type="submit" id="submit">
                 </form>
             </div>
         </div>
@@ -160,7 +162,7 @@
         <!-- END OF WRAPPER HERE NO MORE CONTENT BELOW THIS LINE! -->
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="js/mau5.js"></script>
+    <script src="mau5.js"></script>
 </body>
 
 </html>

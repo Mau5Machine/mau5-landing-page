@@ -28,18 +28,23 @@ a:visited {
 
 /*=================NAVBAR STYLES========================*/
 
+#header {
+    position: fixed;
+    top: 0;
+}
+
 .navbar-brand img {
     width: 60px;
 }
 
 .navbar-header {
     height: 75px;
-    background: $offWhite;
-    box-shadow: 0 5px 20px $mainGreen;
+    background: none;
+    opacity: .7;
 }
 
 .navbar-nav {
-    font-size: 1.5em;
+    font-size: 1em;
     li {
         padding: 5px;
         font-family: $futureFont;
@@ -103,6 +108,13 @@ a:visited {
     order: 3;
     border: 4px solid black;
     margin-left: $gutter;
+    h2 {
+        color: $offWhite;
+        font-family: $futureFont;
+        text-align: center;
+        text-shadow: 3px 3px 10px hsl(0, 0%, 48%);
+        line-height: 1.6em;
+    }
 }
 
 #video {

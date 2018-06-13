@@ -1,0 +1,118 @@
+/*=================NAVBAR STYLES========================*/
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-header {
+    height: 75px;
+    background: none;
+}
+
+.navbar-nav {
+    font-size: 1em;
+    li {
+        padding: 5px;
+        font-family: $futureFont;
+        text-shadow: 3px 3px 3px black;
+    }
+}
+
+/*===================THREE PART CONTAINER MAIN STYLE HERE =====================*/
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+/*======================LEFT SIDEBAR=========================*/
+
+.sidebar {
+    background: url(http://afkdeveloper.com/images/mau5-site/mau5-design.png);
+    background-repeat: no-repeat;
+    margin-left: 2%;
+    flex-basis: 55%;
+    min-height: 536px;
+    order: 1;
+    li {
+        font-family: $futureFont;
+        color: $offWhite;
+        padding: 20px 0;
+        text-shadow: 10px 10px 10px black;
+        font-size: 1em;
+    }
+    img {
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+}
+
+/*======================MIDDLE MAIN CONTAINER=================*/
+
+.main {
+    flex-basis: 100%;
+    min-height: 200px;
+    min-width: 100%;
+    order: 3;
+    border: 4px solid black;
+    margin-left: $gutter;
+    margin-bottom: 100px;
+}
+
+#video {
+    width: 400px;
+    margin: auto;
+    display: block;
+    margin-top: 60px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 20px green;
+    border-radius: 20px;
+}
+
+/*======================RIGTH SIDEBAR=========================*/
+
+.sidebar2 {
+    flex-basis: 55%;
+    margin-left: $gutter;
+    max-width: 50%;
+    min-height: 736px;
+    order: 2;
+    background: url(http://afkdeveloper.com/images/mau5-site/mau5-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    h2 {
+        text-align: center;
+        font-family: $futureFont;
+        line-height: 1.1em;
+        text-shadow: 4px 4px 10px black;
+        color: $mainGreen;
+        font-size: 2em;
+    }
+    form {
+        margin-top: 5em;
+        text-align: center;
+    }
+    #email {
+        width: 75%;
+        height: 40px;
+        font-family: $futureFont;
+        background: $offWhite;
+        border: 2px solid black;
+        box-shadow: 10px 10px 10px black;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    #submit {
+        padding: 0 30px;
+        font-size: 20px;
+        font-family: $futureFont;
+        margin-top: 10px;
+        border-radius: 40px;
+        background: $mainGreen;
+        box-shadow: 10px 10px 10px black;
+    }
+}
